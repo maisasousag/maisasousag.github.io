@@ -1,127 +1,291 @@
 html, body{
-    margin: 0;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
 }
-header{
-    background-color:black;
-    color: white;
+*{
+    box-sizing: border-box;
+}
+/*---header---*/
+.flex-container{
+    background-color:rgb(250, 241, 241) ;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1px 50px;
+}
+.logo{
     height: 60px;
-    width: 100%;
-    position: fixed;
-    z-index:10
 }
-#logo{
-    width: 45px;
-    position: absolute;
-    top: 2px;
-    margin-left: 5%;
+.menu-nav{
+    display: flex;
 }
-#menu{
-    float: right; 
-    margin-right: 5%;
-    list-style: none;
-    margin-top: 10px;
-    color:white;
-}
-li{
-    float: left;
-    padding: 10 5 10 5;
-    color: white;
-}
-li:hover{
-    background-color: #01aaea;
-}
-#imagem {
-    background:url(img/fundo.png);
-    height: 100%;
+.menu-nav a{
+    text-decoration: none; 
+    padding: 20px;
+    color: rgb(175, 76, 76);
+    font-size: 18px;
     text-align: center;
-    background-size:cover; 
 }
-#titulo {
-    color:white;
-    padding-top: 20%;
-    font-size:70px; 
-    text-shadow: 3px 3px black;
+.menu-nav a:hover{
+  color:teal;
 }
-#subtitulo {
-    color: white;
-    padding-left: 20%;
-    padding-right: 20%;
-    text-shadow: 1px 1px black;
-    margin-top: o;
+.flex-container img{
+    width: 100px
 }
-#acao {
-    color: white;
-    border: 1px white solid; 
+/*CAPA*/
+.capa{
+    background-image: url(img/capa.png);
+    min-height: 100vh;
+    background-size: cover;
+    
+    color:rgb(24, 20, 20);
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.capa h1{
+    max-width: 1000px;
+    font-size: 50px;
+    margin-bottom:0;
+
+    text-shadow: 1px 1px blue;
+}
+.capa h2{
+    max-width: 900px;
+    font-size: 30px;
+    margin-top: 0;
+
+    text-shadow: 1px 0px rgb(137, 137, 212);
+}
+.capa .botao{
+    border: 1px solid none;
     padding: 10px 20px 10px 20px;
-    border-radius: 8px; 
+    border-radius: 8px;
+    text-decoration: none;
     font-size: 20px;
+    color:rgb(175, 76, 76); 
 }
-#acao:hover {
-    background-color:#01aaea; 
-
+.botao:hover{
+    color: teal;
 }
-.icone {
-    width: 51px;
-    border-radius: 6px;
+/*--projeto--*/
+.projeto{
+    display:flex;
+    widows: 100%;
+    margin:0 auto;
+    padding: 30px 0px 20px 0px;
+    background-color:rgb(240, 240, 240)  ;
 }
-.icone:hover{
-    background-color:#01aaea;
+.video{
+    flex:50%;
+    padding: 0px 50px;
 }
-section {
-    padding:20px; 
-    float: left;
-
+.video iframe{
+    width:100%;
 }
-.destaque{
-    background-color: #f7f7f7
+.sobre-projeto{
+    flex:50%;
+    padding: 0px 50px;
 }
-.imgeco{
-    width: 90%;
-    height: 30%;
+.sobre-projeto h3{
+    font-size: 30px;
+    text-align: center;
 }
-.coluna{
-    float: left;
-    padding: 0 5%;
-    position: relative; 
-}
-.dois{
-    width:40%;
-}
-.quatro{
-    width:15%;
-}
-.tres{
-    width: 29%;
-    padding: 0 2%;
-}
-.justificado{
+.sobre-projeto p{
     text-align: justify;
 }
-.centralizado{
+.video h3{
+    font-size: 30px;
     text-align: center;
 }
+/*FIM DO PROJETO*/
+
+/*desigualdades*/
+.t-desigualdade{
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(240, 240, 240)  ;
+}
+.desigualdades{
+    display:flex;
+    widows: 100%;
+    margin:0 auto;
+    padding: 30px 0px 20px 0px;
+    background-color:rgb(240, 240, 240);
+    justify-content: center;
+
+}
+._video {
+    flex:50%;
+    padding: 0px 50px; 
+}
+._video iframe{
+    width:100%;
+}
+.sobre-desigualdades{
+   max-width: 50%;
+   margin: 0 auto;
+    flex:50%;
+    padding: 0px 50px;
+}
+/*feminismo*/
+.t-feminismo{
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    margin: auto auto;
+    background-color: rgb(250, 241, 241)  ;
+}
+._feminismo{
+    display:flex;
+    widows: 100%;
+    margin:0 auto;
+    padding: 30px 0px 20px 0px;
+    background-color:rgb(250, 241, 241);
+    justify-content: center;
+}
+.feminismo{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+    background-color: rgb(250, 241, 241) ;
+
+    flex-wrap: wrap;
+}
+.card{
+    flex:25%;
+    text-align: center;
+    padding: 0 50px 0 50px;
+
+}
+
+.img-feminismo{
+     height: 85px;
+     width: 85px;
+     text-align: center;
+     margin: 0 auto;
+     
+     border-radius: 50%;
+}
+.img-feminismo img{
+    max-width: 50%;
+    margin: 15px;
+    
+}
+.feminismo .botao{
+    border: 1px solid none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color:rgb(175, 76, 76);
+}
+.botao:hover{
+    color: teal;
+}
+/*fim feminismo*/
+/*caminhos*/
+.t-caminhos{
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    margin: auto auto;
+    background-color: rgb(250, 241, 241);
+}
+.caminhos{
+    max-width: 100%;
+    background-color: #f7f7f7;
+    padding: 30px 0 20px 0;
+}
+.capac{
+display: block;
+max-width: 100%;
+margin: auto auto;
+padding: 30px 0px 20px 0px;
+text-align: center;
+background-color: rgb(250, 241, 241) ;
+}
+.caminhos h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.caminhos h2{
+    text-align: center;
+    font-size: 16px;
+}
+.conteiner-cards{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.card-caminhos{
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 2px 7px 8px #77777;
+
+    flex:30%;
+}
+.card-caminhos{
+    max-width: 100%;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 2px 7px 8px #7777;
+}
+.card-caminhos:hover{
+    box-shadow: 2px 7px 8px #7777;
+    transition: 0.3s;
+}
+/*fim caminho*/
+/*sobre mim*/
+.sobre-mim{
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+
+    background-color: #f7f7f7;
+}
+
+.coluna{
+    flex: 50%;
+    padding: 0px 40px;
+}
+.coluna img{
+    max-width: 100%;
+}
+.coluna h1{
+    text-align: center;
+    font-size: 30px;
+}
+.coluna h4{
+    text-align: center;
+}
+.coluna p{
+    text-align: justify;
+    line-height: 1.6;
+}
+/*fim sobre mim*/
+/*rodapé*/ 
 footer{
-    background-color: #01aaea;
-    float: left;
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+    background-color: #5f7881;
+    color: white
 }
-@media all and (max-width:768px){
-    #menu{
-        visibility: hidden;
-    }
-    .coluna, .dois, .tres, .quatro{
-        display: block;
-        width:80%;
-        padding: 0;
-        margin: 10px auto;
-        float:none;
-    }
-    #logodiv{
-        width: 100%;
-        position: relative;
-        text-align: center;
-    }
-    #logo{
-        margin-left: 0px;
-        transform: translate(-50%);
-    }
-}
+
+
+/*fim do rodapé*/
