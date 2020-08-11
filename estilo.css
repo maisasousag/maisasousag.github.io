@@ -12,7 +12,9 @@ html, body{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding:1px 50px;
+    padding:0px 50px;
+    width: 100%;
+    position: fixed;
 }
 .logo{
     height: 60px;
@@ -77,28 +79,45 @@ html, body{
 /*--projeto--*/
 .projeto{
     display:flex;
-    widows: 100%;
+    width: 100%;
     margin:0 auto;
     padding: 30px 0px 20px 0px;
+    
+    justify-content: center;
+    align-items: center;
+
     background-color:rgb(240, 240, 240)  ;
+
+    flex-wrap: wrap; /*responsividade*/
 }
 .video{
+    display: flex;
     flex:50%;
     padding: 0px 50px;
+
+    flex-wrap: wrap; /*responsividade*/
 }
 .video iframe{
     width:100%;
 }
-.sobre-projeto{
+.sobre{
+    display: flex;
     flex:50%;
     padding: 0px 50px;
+    margin-top: 20;
+    background-color: rgb(240, 240, 240);
+
+    flex-wrap: wrap; /*responsividade*/
 }
-.sobre-projeto h3{
+.sobre h3{
     font-size: 30px;
     text-align: center;
 }
-.sobre-projeto p{
+.sobre{
+    display: flex;
     text-align: justify;
+
+    flex-wrap: wrap; /*responsividade*/
 }
 .video h3{
     font-size: 30px;
@@ -113,53 +132,80 @@ html, body{
     text-align: center;
     margin: 0 auto;
     background-color: rgb(240, 240, 240)  ;
-}
-.desigualdades{
-    display:flex;
-    widows: 100%;
-    margin:0 auto;
-    padding: 30px 0px 20px 0px;
-    background-color:rgb(240, 240, 240);
-    justify-content: center;
 
 }
-._video {
-    flex:50%;
-    padding: 0px 50px; 
+
+.desigualdades{
+    display:flex;
+    width: 100%;
+    margin:0 auto;
+    padding: 30px 0px 20px 0px;
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgb(240, 240, 240)  ;
+
+    flex-wrap: wrap; /*responsividade*/
 }
-._video iframe{
-    width:100%;
-}
-.sobre-desigualdades{
-   max-width: 50%;
-   margin: 0 auto;
+.video-d{
+    display: flex;
     flex:50%;
     padding: 0px 50px;
+    width: 100%;
 }
+.sobre-d img{
+    display: flex;
+    width: 100%;
+    flex:50%;
+    padding: 10px 50px;
+    margin-top: 20;
+    background-color: rgb(240, 240, 240);
+
+}
+
+
+/*fim desigualdade*/
 /*feminismo*/
 .t-feminismo{
     display: block;
     max-width: 100%;
     text-align: center;
     margin: auto auto;
-    background-color: rgb(250, 241, 241)  ;
+    background-color: rgb(240, 240, 240) ;
 }
 ._feminismo{
     display:flex;
     widows: 100%;
     margin:0 auto;
     padding: 30px 0px 20px 0px;
-    background-color:rgb(250, 241, 241);
+    background-color:rgb(240, 240, 240);
     justify-content: center;
+   
+    flex-wrap:wrap ;/*responsividade*/
+}
+.video-f{
+    display: flex;
+    flex:50%;
+    padding: 0px 50px;
+    width: 100%;
+}
+.sobre-f img{
+    display: flex;
+    width: 100%;
+    flex:50%;
+    margin-top: 20;
+    background-color: rgb(240, 240, 240);
 }
 .feminismo{
     display: flex;
     max-width: 100%;
     margin: 0 auto;
     padding: 30px 0px 20px 0px;
-    background-color: rgb(250, 241, 241) ;
+   
+    background-color: rgb(240, 240, 240) ;
 
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*responsividade*/
 }
 .card{
     flex:25%;
@@ -193,60 +239,63 @@ html, body{
     color: teal;
 }
 /*fim feminismo*/
+
 /*caminhos*/
 .t-caminhos{
     display: block;
     max-width: 100%;
     text-align: center;
-    margin: auto auto;
-    background-color: rgb(250, 241, 241);
+    margin: 0 auto;
+    background-color: rgb(240, 240, 240);
 }
 .caminhos{
+    display: flex;
     max-width: 100%;
-    background-color: #f7f7f7;
+    background-color:rgb(240, 240, 240);
     padding: 30px 0 20px 0;
-}
-.capac{
-display: block;
-max-width: 100%;
-margin: auto auto;
-padding: 30px 0px 20px 0px;
-text-align: center;
-background-color: rgb(250, 241, 241) ;
+    max-width: 100%;
 }
 .caminhos h1{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
 }
-.caminhos h2{
-    text-align: center;
-    font-size: 16px;
+
+.capac img{
+display: block;
+max-width: 100%;
+margin: auto auto;
+padding: 30px 0px 20px 0px;
+text-align: center;
+background-color: rgb(240, 240, 240) ;
+
 }
+.caminhos h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .conteiner-cards{
     display: flex;
     max-width: 100%;
     margin: 0 auto;
     justify-content: center;
-}
-.card-caminhos{
-    max-width: 400px;
-    text-align: center;
-    margin: 10px;
-    box-shadow: 2px 7px 8px #77777;
 
-    flex:30%;
+    flex-wrap: wrap; /*responsividade*/
 }
+
 .card-caminhos{
     max-width: 100%;
-    height: 300px;
+    text-align: center;
     margin: 10px;
-    box-shadow: 2px 7px 8px #7777;
+    height: 300px;
+  
+
+    flex: 30%;
 }
-.card-caminhos:hover{
-    box-shadow: 2px 7px 8px #7777;
-    transition: 0.3s;
-}
+
+
 /*fim caminho*/
 /*sobre mim*/
 .sobre-mim{
@@ -255,7 +304,8 @@ background-color: rgb(250, 241, 241) ;
     margin: 0 auto;
     padding: 30px 0px 20px 0px;
 
-    background-color: #f7f7f7;
+    background-color: rgb(240, 240, 240);
+    flex-wrap: wrap;
 }
 
 .coluna{
@@ -276,6 +326,7 @@ background-color: rgb(250, 241, 241) ;
     text-align: justify;
     line-height: 1.6;
 }
+
 /*fim sobre mim*/
 /*rodapé*/ 
 footer{
@@ -284,8 +335,75 @@ footer{
     margin: 0 auto;
     padding: 30px 0px 50px 0px;
     background-color: #5f7881;
-    color: white
+    color: white;
+
+    flex-wrap: wrap;
 }
-
-
 /*fim do rodapé*/
+
+/*responsividade*/
+
+@media (max-width:760px) {
+    /*header responsivo*/
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        position: fixed;
+    }
+    .menu-nav{
+       display: none;
+    }
+    /*capa responsivo*/
+    .capa{
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        background-size: cover;
+    }
+    .capa h1{
+        font-size: 25px;
+        text-shadow: 0.5px 0.5px blue;
+    }
+    .capa h2{
+        font-size: 15px;
+    }
+    .capa .botao{
+        font-size: 15px;
+    }
+    /*projeto responsivo*/
+    .projeto{
+        flex-direction: column;
+
+    }
+    .video{
+        flex: 1;
+        padding: 20px;
+        width: 100%;  
+    }
+    .sobre{
+        padding: 20px;
+    }
+    /*feminismo responsivo*/
+    .feminismo{
+        flex-direction: column;
+    }
+    /*charges responsivo*/
+    .charges{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*caminhos responsivo*/
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*sobre mim responsivo*/
+    .sobre-mim{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+
+}
